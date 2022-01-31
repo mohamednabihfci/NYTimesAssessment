@@ -1,8 +1,9 @@
-
-NYTimesTask
+NYTimesAssessment
 
 * I applied the MVVM design pattern with rx data binding.
-    
+   
+* I use `SwiftLint` for swift style and to be  consistent on my coding style .
+ 
 * I applied the Coordinator patterrn for handling navigation in the app.
 
 * I installed some dependencies:
