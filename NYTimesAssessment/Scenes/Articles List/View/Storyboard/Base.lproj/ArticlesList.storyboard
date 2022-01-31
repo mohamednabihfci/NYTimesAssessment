@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popular Articles-->
+        <scene sceneID="T30-Ux-4qT">
+            <objects>
+                <viewController storyboardIdentifier="ArticlesListViewController" id="3wR-uD-JjT" customClass="ArticlesListViewController" customModule="NYTimesTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Va3-25-vrW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgJ-59-dE0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" id="F9w-6u-Y1u">
+                                <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IU0-Ye-5t8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jgJ-59-dE0" firstAttribute="top" secondItem="Va3-25-vrW" secondAttribute="top" id="3Qf-5H-SKi"/>
+                            <constraint firstItem="jgJ-59-dE0" firstAttribute="trailing" secondItem="IU0-Ye-5t8" secondAttribute="trailing" id="4zn-Hl-aN6"/>
+                            <constraint firstItem="F9w-6u-Y1u" firstAttribute="centerX" secondItem="jgJ-59-dE0" secondAttribute="centerX" id="84v-KC-2bC"/>
+                            <constraint firstAttribute="bottom" secondItem="jgJ-59-dE0" secondAttribute="bottom" id="MSp-5q-O7i"/>
+                            <constraint firstItem="jgJ-59-dE0" firstAttribute="leading" secondItem="IU0-Ye-5t8" secondAttribute="leading" id="VsO-Yr-nFA"/>
+                            <constraint firstItem="F9w-6u-Y1u" firstAttribute="centerY" secondItem="jgJ-59-dE0" secondAttribute="centerY" id="tZ7-Pw-U8M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Popular Articles" id="hjr-S8-wah"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="F9w-6u-Y1u" id="MIZ-3j-HIt"/>
+                        <outlet property="tableView" destination="jgJ-59-dE0" id="kyN-HZ-Qma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfc-VL-Mqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="-58.258928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
